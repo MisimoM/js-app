@@ -1,0 +1,22 @@
+.sign-in .container {
+    display: grid;
+}
+
+.sign-in .grid-container {
+    width: 45%;
+    justify-self: center;
+}
+
+.sign-in h1 {
+    margin-bottom: 1rem;
+}
+
+.sign-in .sign-in-form {
+    display: grid;
+    gap: 1rem;
+}
+
+.sign-in a {
+    text-align: center;
+    text-decoration: none;
+}

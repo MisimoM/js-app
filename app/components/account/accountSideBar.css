@@ -1,0 +1,25 @@
+.account-bar .profile {
+    display: block;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.account-bar .profile img {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.account-bar .profile-container {
+  justify-content: center;
+  width: 100%;
+  border-right: 1px solid #D4D7E5;
+}
+
+.account-bar .nav-holder {
+    display: grid;
+    gap: 2rem;
+}
+
+.account-bar .nav-holder a:active {
+    background-color: #6366F1;
+    color: #FFFFFF;
+}

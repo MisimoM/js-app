@@ -1,0 +1,57 @@
+.course-item {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0px 4px 9px -1px rgba(19, 16, 34, 0.03), 0px 4.4px 20px -1px rgba(19, 16, 34, 0.05);
+}
+
+.course-item img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.course-item .text-holder {
+    padding: 1rem;
+}
+
+.course-item .top-holder {
+    border-bottom: 1px solid #E2E5F1;
+    padding-bottom: 1rem;
+    display: grid;
+    gap: 0.5rem;
+}
+
+.course-item .top-holder .author {
+    line-height: 160%;
+    font-weight: 400;
+    color: #565973;
+    font-family: "Manrope", sans-serif;
+    font-size: 14px !important;
+}
+
+.course-item .top-holder .price {
+    color: #6366F1;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.course-item .bottom-holder {
+    display: flex;
+    gap: 2rem;
+    padding-top: 1rem;
+}
+
+.course-item .time, .course-item .rating {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.course-item .time p, .course-item .rating p {
+    line-height: 160%;
+    font-weight: 400;
+    color: #565973;
+    font-family: "Manrope", sans-serif;
+    font-size: 14px !important;
+    color: #9397AD;
+}

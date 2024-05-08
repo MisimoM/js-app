@@ -1,0 +1,39 @@
+footer {
+    padding: 50px 0 30px 0;
+    color: #9397AD;
+}
+
+footer .container {
+    text-align: center;
+}
+
+footer .container .social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+footer .btn-social {
+    line-height: 160%;
+    font-weight: 400;
+    color: #565973;
+    font-family: "Manrope", sans-serif;
+    font-size: 20px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    width: 44px;
+    height: 44px;
+    background-color: #EFF2FC;
+    color: #33354D;
+    text-decoration: none;
+}
+
+footer .btn-social:hover {
+    text-decoration: none;
+    background: #565973;
+    color: #FFFFFF;
+}

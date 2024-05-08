@@ -1,0 +1,8 @@
+.course-header .container {
+    display: grid;
+}
+
+.course-header .meta-info {
+    display: flex;
+    gap: 2rem;
+}

@@ -1,0 +1,54 @@
+header {
+    background-color: white;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header .container {
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto 1fr 1fr;
+    grid-template-areas: "logo navmenu buttons";
+    padding: 2rem 0;
+}
+
+header .container #logo {
+    grid-area: logo;
+}
+
+header .container .menu {
+    grid-area: navmenu;
+}
+
+header .container .menu ul {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+header .container .account-buttons {
+    display: flex;
+    gap: 1rem;
+    place-self: center end;
+    grid-area: buttons;
+}
+
+header .menu-link {
+    line-height: 160%;
+    font-weight: 400;
+    color: #565973;
+    font-family: "Manrope", sans-serif;
+    font-size: 16px;
+    color: #33354D;
+    font-weight: 600 !important;
+    text-decoration: none;
+    transition: color 0.25s ease-in-out;
+}
+
+header .menu-link:hover, .menu-link:active, .menu-link:focus,
+.menu-link .active {
+    color: #6366F1;
+    text-decoration: none;
+}

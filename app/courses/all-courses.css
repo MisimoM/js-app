@@ -1,0 +1,103 @@
+.all-courses h1 {
+    line-height: 160%;
+    font-weight: 400;
+    color: #565973;
+    font-family: "Manrope", sans-serif;
+    font-weight: 800;
+    color: #0B0F19;
+    font-size: 40px !important;
+}
+
+.all-courses a {
+    text-decoration: none;
+}
+
+.all-courses .title-holder {
+    display: flex;
+    justify-content: space-between;
+}
+
+.all-courses .input-wrapper {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1rem;
+    justify-content: space-between;
+}
+
+.all-courses .input-holder {
+    display: flex;
+    align-items: center;
+}
+
+.all-courses .input-holder input {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px #D4D7E5 solid;
+    padding: 0.7rem 0 0.7rem 1rem;
+    border-right: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.all-courses .input-holder button {
+    border-radius: 5px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border: 1px #D4D7E5 solid;
+    border-left: none;
+    padding: 0.7rem 0 0.7rem 1rem;
+    width: 3rem;
+}
+
+.all-courses .input-holder button i {
+    text-align: center;
+    margin-right: 1rem;
+}
+
+.all-courses .grid-container {
+    display: grid;
+    justify-content: center;
+    margin-top: 3rem;
+    gap: 1rem;
+}
+
+.all-courses .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.all-courses .bottom-content {
+    border-radius: 10px;
+    margin-top: 5rem;
+    background-color: #EFF2FC;
+    padding: 4rem;
+    display: grid;
+    grid-template-areas: "paragraph desk-img" "title desk-img" "button desk-img";
+}
+
+.all-courses .bottom-content p {
+    grid-area: paragraph;
+    line-height: 160%;
+    font-weight: 400;
+    color: #565973;
+    font-family: "Manrope", sans-serif;
+    font-size: 24px !important;
+}
+
+.all-courses .bottom-content h1 {
+    grid-area: title;
+    width: 70%;
+}
+
+.all-courses .bottom-content span {
+    color: #6366F1;
+}
+
+.all-courses .bottom-content button {
+    grid-area: button;
+    width: 50%;
+}
+
+.all-courses .bottom-content img {
+    grid-area: desk-img;
+    width: 100%;
+}

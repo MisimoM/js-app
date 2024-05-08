@@ -1,0 +1,17 @@
+.sign-up .container {
+    display: grid;
+}
+
+.sign-up .grid-container {
+    width: 45%;
+    justify-self: center;
+}
+
+.sign-up h1 {
+    margin-bottom: 1rem;
+}
+
+.sign-up .sign-up-form {
+    display: grid;
+    gap: 1rem;
+}
