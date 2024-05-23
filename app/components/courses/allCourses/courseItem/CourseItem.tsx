@@ -1,18 +1,21 @@
 import Link from "next/link";
 import "./courseItem.css";
 
+
 type CourseItemProps = {
-    image?: string;
+    imageUrl: string;
+    isBestSeller?: boolean;
     title: string;
-    author: string;
-    price: number;
     hours: number;
     likePercentage: string;
     likeCount: string;
+    author: string[]
+    price: string;
 }
 
 export default function CourseItem({
-    image,
+    imageUrl,
+    isBestSeller,
     title,
     author,
     price,
@@ -23,12 +26,12 @@ export default function CourseItem({
     return (
         <Link href="courses/singlecourse">
             <div className="course-item">
-                <div><img src={image} alt="" /></div>
+                <div><img src={imageUrl} alt="" /></div>
                 <div className="text-holder">
                     <div className="top-holder">
                         <h5>{title}</h5>
-                        <p className="author">{author}</p>
-                        <p className="price">{price}</p>
+                        <p className="author">by {author.join(', ')}</p>
+                        <p className="price">$ {price}</p>
                     </div>
                     <div className="bottom-holder">
                         <div className="time">

@@ -1,12 +1,24 @@
+'use client'
+
 import Link from "next/link";
 import Image from "next/image";
+
+import { useState, useEffect } from "react";
 
 import CourseItem from "../components/courses/allCourses/courseItem/CourseItem";
 import CourseImage from "../../public/images/officeimage.svg";
 
 import "./all-courses.css";
+import getCourses from "@/services/courseService/getCourses";
 
 export default function Courses() {
+    const [courses, setCourses] = useState<any[]>([]);
+
+    useEffect(() => {
+        getCourses(setCourses)
+    }, []);
+
+
     return (
       <main>
         <section className="all-courses">
@@ -23,7 +35,18 @@ export default function Courses() {
                         </div>
                     </div>
                     <div className="grid-container">
-                        <CourseItem title="HTML/CSS" author="Matheo Möll" price={150} hours={100} likePercentage="95%" likeCount="3k" />
+                    {courses.map((course) => (
+                        <CourseItem
+                        key={course.id}
+                        imageUrl={course.imageUrl}
+                        title={course.title}
+                        author={course.authors.map((author: any) => author.name)}
+                        price={course.prices.price}
+                        hours={course.hours}
+                        likeCount={course.likes}
+                        likePercentage={`${course.likesInPercent}%`}
+                        />
+                    ))}
                     </div>
                     <div className="bottom-content">
                         <p>Ready to get started?</p>
