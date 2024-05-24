@@ -7,10 +7,11 @@ type CourseItemProps = {
     isBestSeller?: boolean;
     title: string;
     hours: number;
-    likePercentage: string;
-    likeCount: string;
+    likePercentage: number;
+    likeCount: number;
     author: string[]
     price: string;
+    id: string;
 }
 
 export default function CourseItem({
@@ -21,10 +22,11 @@ export default function CourseItem({
     price,
     hours,
     likePercentage,
-    likeCount
+    likeCount,
+    id
 }: CourseItemProps) {
     return (
-        <Link href="courses/singlecourse">
+        <Link href={`/courses/${id}`}>
             <div className="course-item">
                 <div><img src={imageUrl} alt="" /></div>
                 <div className="text-holder">
@@ -36,11 +38,11 @@ export default function CourseItem({
                     <div className="bottom-holder">
                         <div className="time">
                             <i className="fa-light fa-clock"></i>
-                            <p>{hours}</p>
+                            <p>{hours} hours</p>
                         </div>
                         <div className="rating">
                             <i className="fa-light fa-thumbs-up"></i>
-                            <p>{likePercentage} {likeCount}</p>
+                            <p>{likePercentage}% ({likeCount/1000}K)</p>
                         </div>
                     </div>
                 </div>

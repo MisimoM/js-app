@@ -38,13 +38,14 @@ export default function Courses() {
                     {courses.map((course) => (
                         <CourseItem
                         key={course.id}
+                        id={course.id}
                         imageUrl={course.imageUrl}
                         title={course.title}
                         author={course.authors.map((author: any) => author.name)}
                         price={course.prices.price}
                         hours={course.hours}
                         likeCount={course.likes}
-                        likePercentage={`${course.likesInPercent}%`}
+                        likePercentage={course.likesInPercent}
                         />
                     ))}
                     </div>

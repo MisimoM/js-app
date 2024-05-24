@@ -1,3 +1,5 @@
+import "./courseInfoCard.css"
+
 import Button from "@/app/components/global/button/Button";
 
 type CourseInfoCardProps = {
@@ -16,7 +18,7 @@ export default function CourseInfoCard({
     discountPrice
 }: CourseInfoCardProps) {
     return (
-        <div>
+        <div className="info-card">
             <h4>This course includes:</h4>
             <ul>
                 <li>{hours} hours on-demand video</li>
@@ -25,7 +27,7 @@ export default function CourseInfoCard({
                 <li>Full lifetime access</li>
                 <li>Certificate of completion</li>
             </ul>
-            <h2>{price}</h2>
+            <h2>$ {price}</h2>
             <Button className="btn-theme" title="Join Course" />
         </div>
     )

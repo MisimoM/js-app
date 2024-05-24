@@ -1,0 +1,26 @@
+.course-author {
+    display: flex;
+    margin-top: 3rem;
+    border-radius: 50px;
+}
+
+.course-author .author-content {
+    padding: 5rem;
+    background-color: rgb(14, 14, 14);
+    color: white;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.course-author .img-holder{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.course-author .author-img{
+    width: 500px;
+    height: 500px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+

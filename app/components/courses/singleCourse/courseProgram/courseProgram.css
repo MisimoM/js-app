@@ -1,0 +1,34 @@
+.course-program {
+    display: grid;
+    gap: 2.5rem;
+}
+
+.course-program h4,
+.course-program p {
+    margin: 0;
+}
+
+.course-program .program-list {
+    display: grid;
+    gap: 2rem;
+}
+
+.course-program .program-list-row {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.course-program .number-display {
+    font-size: 25px;
+    padding: 0 1rem;
+    padding-top: 0.3rem;
+    border-radius: 50%;
+    height: 3rem;
+    box-shadow: 3px 4px 15px -4px rgba(128,128,128,0.5);
+}
+
+.course-program .text-holder {
+    display: grid;
+    gap: 0.5rem;
+}
+

@@ -1,0 +1,15 @@
+.course-description {
+    display: grid;
+    gap: 2rem;
+
+    margin-bottom: 3rem;
+}
+
+.course-description p {
+    margin: 0;
+}
+
+.course-description ul {
+    display: grid;
+    gap: 0.5rem;
+}

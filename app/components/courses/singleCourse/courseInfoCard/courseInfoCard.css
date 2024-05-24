@@ -1,0 +1,14 @@
+.info-card {
+    padding: 2rem;
+    box-shadow: 3px 4px 15px -4px rgba(128,128,128,0.5);
+    border-radius: 10px;
+    display: grid;
+    gap: 1rem;
+}
+
+
+
+.info-card ul {
+    display: grid;
+    gap: 0.5rem;
+}

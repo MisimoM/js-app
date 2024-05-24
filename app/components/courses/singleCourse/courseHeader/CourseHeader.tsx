@@ -1,8 +1,7 @@
-import Image from "next/image";
 import "./courseHeader.css";
 
 type CourseHeaderProps = {
-    image?: string;
+    imageUrl: string;
     title: string;
     text: string;
     reviews: number;
@@ -13,7 +12,7 @@ type CourseHeaderProps = {
 }
 
 export default function CourseHeader({
-    image,
+    imageUrl,
     title,
     text,
     reviews,
@@ -23,21 +22,20 @@ export default function CourseHeader({
     authorImage
 }: CourseHeaderProps) {
     return (
-        <div className="course-header">
-            {/* <Image src={image} /> */}
+        <div className="course-header" style={{ backgroundImage: `url(${imageUrl})` }}>
             <div className="container">
                 <div className="text-holder">
                     <h1>{title}</h1>
                     <p>{text}</p>
                 </div>
                 <div className="meta-info">
-                    <p>{reviews} reviews</p>
-                    <p>{likes} likes</p>
+                    <p>{reviews/1000}K reviews</p>
+                    <p>{likes/1000}K likes</p>
                     <p>{hours} Hours</p>
                 </div>
-                <div>
+                <div className="author-holder">
                     <div>
-                        {/* <Image src={authorImage} /> */}
+                        <img className="author-img" src={authorImage} />
                     </div>
                     <div>
                         <p>Created by</p>

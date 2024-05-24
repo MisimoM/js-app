@@ -1,0 +1,15 @@
+.single-course .wrapper {
+    display: grid;
+    grid-template-columns: 2fr auto;
+    margin-top: 6rem;
+    gap: 10rem;
+}
+
+.single-course ul,
+.single-course h1,
+.single-course h2,
+.single-course h4
+.single-course p {
+    margin: 0;
+    padding: 0;
+}
