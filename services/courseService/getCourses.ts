@@ -1,3 +1,5 @@
+import getTokenFromCookie from "@/utils/auth";
+
 export default async function getCourses(Courses: (data: any[]) => void){
   const query = `
   query {
@@ -20,10 +22,13 @@ export default async function getCourses(Courses: (data: any[]) => void){
   `; 
     
   try {
+    const accessToken = await getTokenFromCookie();
+    
     const res = await fetch('http://localhost:5180/graphql', {
       method: 'POST',
       headers: {
-          'Content-Type': 'application/json'
+        'Content-Type': 'application/json',
+        Authorization: `Bearer ${accessToken}`
       },
       body: JSON.stringify({
         query: query
